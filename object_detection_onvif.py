@@ -88,7 +88,7 @@ detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # Initialize webcam feed
-mycam = ONVIFCamera('rtsp://192.168.55.177:554', 80, 'user', 'User'0)
+mycam = ONVIFCamera('rtsp://192.168.55.177:554', 80, 'user', 'User')
 media_controll = mycam.create_media_service()
 print('cam initialising')
 cam_config = media_controll.GetProfiles()[0].token
